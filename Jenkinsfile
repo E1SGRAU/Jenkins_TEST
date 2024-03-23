@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo " ============== docker APACHE =================="
                 sh 'docker build -t eisgraus/apache:v1 .'
-                sh 'docker run -d -p 8446:80 apache:v1'
+                sh 'docker run -d -p 8446:80 eisgraus/apache:v1'
                 echo " ============== docker APACHE completed =================="
             }
         }

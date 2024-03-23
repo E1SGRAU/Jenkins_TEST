@@ -4,6 +4,8 @@ pipeline {
         stage('Shell1') {
             steps {
                 sh 'pwd'
+                sh 'cd /home/ubuntu/'
+                sh 'pwd'
             }
         }
     }
